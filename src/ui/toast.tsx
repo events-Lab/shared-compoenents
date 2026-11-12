@@ -157,7 +157,7 @@ function ToastIcon({ tone }: { tone: ToastTone }) {
 function ToastCard({ item }: { item: ToastRecord }) {
   return (
     <div
-      className="toast-enter pointer-events-auto flex w-full max-w-sm overflow-hidden rounded-2xl border border-secondary-200 bg-white shadow-[0_16px_40px_rgba(29,20,40,0.16)]"
+      className="toast-enter pointer-events-auto flex w-full max-w-sm overflow-hidden rounded-2xl border border-secondary-200 bg-white shadow-[0_16px_40px_rgba(30,41,59,0.16)]"
       role={item.tone === "danger" ? "alert" : "status"}
       onMouseEnter={() => clearTimer(item.id)}
       onMouseLeave={() => schedule(item)}

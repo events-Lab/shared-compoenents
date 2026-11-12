@@ -1,42 +1,45 @@
 @theme {
-  --color-primary-50: #f6f1ff;
-  --color-primary-100: #eadfff;
-  --color-primary-200: #d4c2ff;
-  --color-primary-300: #b794ff;
-  --color-primary-400: #9a5cf5;
-  --color-primary-500: #7c3aed;
-  --color-primary-600: #6d28d9;
-  --color-primary-700: #5b21b6;
-  --color-primary-800: #4c1d95;
-  --color-primary-900: #3b1578;
-  --color-primary-950: #240d4a;
-  --color-primary: #6d28d9;
+  /* Electric blue for buttons, links, and active states. Deep navy anchors the dark end. */
+  --color-primary-50: #eaf5ff;
+  --color-primary-100: #d4ebff;
+  --color-primary-200: #b7dbff;
+  --color-primary-300: #85c4ff;
+  --color-primary-400: #4da3ff;
+  --color-primary-500: #1677ff;
+  --color-primary-600: #0f66e0;
+  --color-primary-700: #0c54c0;
+  --color-primary-800: #0e3e8c;
+  --color-primary-900: #102a43;
+  --color-primary-950: #102a43;
+  --color-primary: #1677ff;
 
-  --color-secondary-50: #f8f6fb;
-  --color-secondary-100: #f1ecf7;
-  --color-secondary-200: #e3dbea;
-  --color-secondary-300: #cbbfd6;
-  --color-secondary-400: #a894b6;
-  --color-secondary-500: #6f5e82;
-  --color-secondary-600: #58496a;
-  --color-secondary-700: #433655;
-  --color-secondary-800: #2d223b;
-  --color-secondary-900: #1d1428;
-  --color-secondary-950: #120c1c;
-  --color-secondary: #f1ecf7;
+  /* Soft white page canvas, slate text. */
+  --color-secondary-50: #f8fafc;
+  --color-secondary-100: #f1f5f9;
+  --color-secondary-200: #e2e8f0;
+  --color-secondary-300: #cbd5e1;
+  --color-secondary-400: #94a3b8;
+  --color-secondary-500: #64748b;
+  --color-secondary-600: #475569;
+  --color-secondary-700: #334155;
+  --color-secondary-800: #1e293b;
+  --color-secondary-900: #1e293b;
+  --color-secondary-950: #0f172a;
+  --color-secondary: #f8fafc;
 
-  --color-accent-50: #fff7ed;
-  --color-accent-100: #ffedd5;
-  --color-accent-200: #fed7aa;
-  --color-accent-300: #fdba74;
-  --color-accent-400: #fb923c;
-  --color-accent-500: #f97316;
-  --color-accent-600: #ea580c;
-  --color-accent-700: #c2410c;
-  --color-accent-800: #9a3412;
-  --color-accent-900: #7c2d12;
-  --color-accent-950: #431407;
-  --color-accent: #f97316;
+  /* Sky blue for icons, highlights, and graphics. */
+  --color-accent-50: #f3fbfe;
+  --color-accent-100: #e5f6fd;
+  --color-accent-200: #c5eefb;
+  --color-accent-300: #93dff7;
+  --color-accent-400: #55c7f3;
+  --color-accent-500: #2bb5ea;
+  --color-accent-600: #1499cc;
+  --color-accent-700: #0e7ba6;
+  --color-accent-800: #116486;
+  --color-accent-900: #14536f;
+  --color-accent-950: #0c3448;
+  --color-accent: #55c7f3;
 }
 
 @keyframes rise-in {
@@ -87,14 +90,14 @@
 }
 
 .hero-glow {
+  background-color: #102a43;
   background-image: linear-gradient(
-    120deg,
-    #5b21b6 0%,
-    #7c3aed 32%,
-    #c026d3 58%,
-    #f97316 100%
+    125deg,
+    #0c2136 0%,
+    #102a43 58%,
+    #1a4f86 100%
   );
-  background-size: 220% 220%;
+  background-size: 180% 180%;
   animation: gradient-shift 9s ease infinite;
 }
 

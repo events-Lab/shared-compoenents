@@ -13,7 +13,7 @@ export type AppShellProps = {
 
 export function AppShell({ product, area, nav, children }: AppShellProps) {
   return (
-    <div className="relative flex min-h-screen overflow-x-hidden bg-primary-50 font-[inherit] text-secondary-900 max-[800px]:flex-col">
+    <div className="relative flex min-h-screen overflow-x-hidden bg-secondary-50 font-[inherit] text-secondary-900 max-[800px]:flex-col">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 overflow-hidden"
@@ -24,7 +24,7 @@ export function AppShell({ product, area, nav, children }: AppShellProps) {
       <aside className="relative z-10 flex w-[248px] shrink-0 flex-col bg-primary-950 px-4 py-6 text-primary-200 max-[800px]:w-auto">
         <div className="flex items-center gap-3 px-2 pb-6">
           <span
-            className="relative grid size-9 place-items-center rounded-[10px] bg-primary text-[13px] font-bold tracking-[0.04em] text-white shadow-[0_8px_18px_rgba(249,115,22,0.28)]"
+            className="relative grid size-9 place-items-center rounded-[10px] bg-primary text-[13px] font-bold tracking-[0.04em] text-white shadow-[0_8px_18px_rgba(22,119,255,0.35)]"
             aria-hidden="true"
           >
             EL

@@ -26,7 +26,7 @@ export function NavList({
               href={item.href}
               className={
                 active
-                  ? `${linkClass} bg-accent text-white shadow-[0_8px_16px_rgba(249,115,22,0.3)]`
+                  ? `${linkClass} bg-primary text-white shadow-[0_8px_16px_rgba(22,119,255,0.35)]`
                   : `${linkClass} hover:bg-white/10 hover:text-white`
               }
               aria-current={active ? "page" : undefined}

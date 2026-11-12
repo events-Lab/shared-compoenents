@@ -19,8 +19,8 @@ export function HeaderNav({ items }: { items: NavItem[] }) {
               aria-current={active ? "page" : undefined}
               className={
                 active
-                ? "inline-flex rounded-full bg-primary px-3.5 py-2 text-sm font-semibold text-white no-underline shadow-[0_6px_16px_rgba(109,40,217,0.28)] transition duration-200"
-                : "inline-flex rounded-full px-3.5 py-2 text-sm font-semibold text-secondary-700 no-underline transition duration-200 hover:bg-accent-100 hover:text-accent-700"
+                ? "inline-flex rounded-full bg-primary px-3.5 py-2 text-sm font-semibold text-white no-underline shadow-[0_6px_16px_rgba(22,119,255,0.35)] transition duration-200"
+                : "inline-flex rounded-full px-3.5 py-2 text-sm font-semibold text-primary-100 no-underline transition duration-200 hover:bg-white/10 hover:text-white"
               }
             >
               {item.label}

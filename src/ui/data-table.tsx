@@ -32,7 +32,7 @@ export function DataTable<T>({
   }
 
   return (
-    <div className="overflow-x-auto rounded-2xl border border-secondary-200 bg-white">
+    <div className="overflow-x-auto rounded-2xl border border-primary-100 bg-primary-50">
       <table className="w-full min-w-[640px] border-collapse text-left text-sm">
         <thead>
           <tr className="border-b border-secondary-200 bg-secondary-50">
@@ -59,7 +59,7 @@ export function DataTable<T>({
                 "border-b border-secondary-100 transition duration-200 last:border-b-0",
                 onRowClick
                   ? "cursor-pointer hover:bg-accent-50 focus-within:bg-accent-50"
-                  : "hover:bg-primary-50",
+                  : "hover:bg-primary-100",
               )}
               onClick={onRowClick ? () => onRowClick(row) : undefined}
               onKeyDown={

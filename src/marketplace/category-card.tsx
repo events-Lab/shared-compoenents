@@ -17,7 +17,7 @@ export function CategoryCard({ category, onOpen }: CategoryCardProps) {
       className="group m-0 flex w-full cursor-pointer flex-col items-center gap-3 border-0 bg-transparent p-0 font-[inherit] text-secondary-900"
       onClick={() => onOpen?.(category)}
     >
-      <span className="relative block size-[148px] overflow-hidden rounded-full border border-primary-100 bg-primary-50 shadow-[0_10px_30px_rgba(91,33,182,0.12)] transition duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_16px_32px_rgba(249,115,22,0.2)] max-[700px]:size-[120px]">
+      <span className="relative block size-[148px] overflow-hidden rounded-full border border-primary-100 bg-primary-50 shadow-[0_10px_30px_rgba(16,42,67,0.12)] transition duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_16px_32px_rgba(85,199,243,0.35)] max-[700px]:size-[120px]">
         {cover ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img

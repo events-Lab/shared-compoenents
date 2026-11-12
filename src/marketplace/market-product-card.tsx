@@ -25,7 +25,7 @@ export function MarketProductCard({
   const canAdd = Boolean(onAddToCart) && !stock.soldOut;
 
   return (
-    <article className="overflow-hidden rounded-[18px] border border-primary-100 bg-white shadow-[0_12px_28px_rgba(91,33,182,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(109,40,217,0.16)]">
+    <article className="overflow-hidden rounded-[18px] border border-primary-100 bg-primary-50 shadow-[0_12px_28px_rgba(16,42,67,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(22,119,255,0.16)]">
       <div className="relative">
         <button
           type="button"
@@ -46,7 +46,7 @@ export function MarketProductCard({
           </span>
         </button>
         {product.badgeLabel ? (
-          <span className="absolute top-3 left-3 rounded-md bg-accent px-2.5 py-1 text-[11px] font-semibold tracking-wide text-white uppercase shadow-[0_6px_14px_rgba(249,115,22,0.35)]">
+          <span className="absolute top-3 left-3 rounded-md bg-accent px-2.5 py-1 text-[11px] font-semibold tracking-wide text-primary-950 uppercase shadow-[0_6px_14px_rgba(85,199,243,0.45)]">
             {product.badgeLabel}
           </span>
         ) : null}

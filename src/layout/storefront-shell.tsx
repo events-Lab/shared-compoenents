@@ -21,7 +21,7 @@ export function StorefrontShell({
   children,
 }: StorefrontShellProps) {
   return (
-    <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-primary-50 text-secondary-900">
+    <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-secondary-50 text-secondary-900">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 overflow-hidden"
@@ -29,21 +29,21 @@ export function StorefrontShell({
         <div className="float-orb absolute -top-24 -left-16 size-72 rounded-full bg-primary-300/45 blur-3xl" />
         <div className="float-orb absolute top-32 -right-20 size-80 rounded-full bg-accent-300/40 blur-3xl [animation-delay:-2.5s]" />
       </div>
-      <header className="sticky top-0 z-40 border-b border-primary-100/80 bg-white/75 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-primary-950 text-primary-100">
         <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-5 py-3.5">
           <Link href="/" className="flex items-center gap-2.5 no-underline">
             <span
-              className="relative grid size-9 place-items-center rounded-full bg-primary text-[12px] font-bold tracking-wide text-white shadow-[0_8px_18px_rgba(109,40,217,0.35)]"
+              className="relative grid size-9 place-items-center rounded-full bg-primary text-[12px] font-bold tracking-wide text-white shadow-[0_8px_18px_rgba(22,119,255,0.35)]"
               aria-hidden="true"
             >
               EL
               <span className="pulse-dot absolute -top-0.5 -right-0.5 size-2.5 rounded-full bg-accent ring-2 ring-white" />
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="text-[17px] font-semibold tracking-tight text-secondary-950">
+              <span className="text-[17px] font-semibold tracking-tight text-white">
                 {product}
               </span>
-              <span className="text-[11px] font-medium tracking-[0.08em] text-secondary-500 uppercase">
+              <span className="text-[11px] font-medium tracking-[0.08em] text-primary-200 uppercase">
                 Padel
               </span>
             </span>
@@ -55,7 +55,7 @@ export function StorefrontShell({
                 <ul className="m-0 flex list-none gap-1 p-0">
                   {nav.map((item) => (
                     <li key={item.href}>
-                      <span className="inline-flex px-3.5 py-2 text-sm font-semibold text-secondary-500">
+                      <span className="inline-flex px-3.5 py-2 text-sm font-semibold text-primary-200">
                         {item.label}
                       </span>
                     </li>
@@ -72,14 +72,14 @@ export function StorefrontShell({
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3 py-2 text-sm font-semibold text-secondary-700 no-underline transition duration-200 hover:bg-primary-100 hover:text-primary-800"
+                className="rounded-full px-3 py-2 text-sm font-semibold text-primary-100 no-underline transition duration-200 hover:bg-white/10 hover:text-white"
               >
                 {item.label}
               </Link>
             ))}
             <Link
               href="/cart"
-              className="ml-1 inline-flex min-h-10 items-center rounded-full bg-accent px-4 text-sm font-semibold text-white no-underline shadow-[0_8px_18px_rgba(249,115,22,0.28)] transition duration-200 hover:-translate-y-0.5 hover:bg-accent-600"
+              className="ml-1 inline-flex min-h-10 items-center rounded-full bg-primary px-4 text-sm font-semibold text-white no-underline shadow-[0_8px_18px_rgba(22,119,255,0.35)] transition duration-200 hover:-translate-y-0.5 hover:bg-primary-700"
             >
               Cart
             </Link>

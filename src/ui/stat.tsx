@@ -9,7 +9,7 @@ export type StatProps = {
 
 export function Stat({ label, value, detail }: StatProps) {
   return (
-    <article className="overflow-hidden rounded-2xl border border-secondary-200 bg-white shadow-[0_10px_24px_rgba(20,16,32,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(20,16,32,0.1)]">
+    <article className="overflow-hidden rounded-2xl border border-primary-100 bg-primary-50 shadow-[0_10px_24px_rgba(16,42,67,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(16,42,67,0.1)]">
       <div className="h-1 bg-linear-to-r from-primary to-accent" />
       <div className="px-[18px] pt-3.5 pb-4">
       <p className="m-0 text-[13px] font-semibold text-secondary-500">{label}</p>

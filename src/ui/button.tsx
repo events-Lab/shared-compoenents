@@ -7,13 +7,13 @@ type Variant = "primary" | "secondary" | "ghost" | "accent";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-primary text-white shadow-[0_8px_18px_rgba(109,40,217,0.22)] transition duration-200 enabled:hover:-translate-y-0.5 enabled:hover:bg-primary-700",
+    "bg-primary text-white shadow-[0_8px_18px_rgba(22,119,255,0.22)] transition duration-200 enabled:hover:-translate-y-0.5 enabled:hover:bg-primary-700",
   secondary:
     "border-secondary-300 bg-secondary text-secondary-900 transition duration-200 enabled:hover:-translate-y-0.5 enabled:hover:bg-secondary-200",
   ghost:
     "bg-transparent text-primary transition duration-200 enabled:hover:bg-primary/8",
   accent:
-    "bg-accent text-white shadow-[0_8px_18px_rgba(249,115,22,0.28)] transition duration-200 enabled:hover:-translate-y-0.5 enabled:hover:bg-accent-600",
+    "bg-accent text-primary-950 shadow-[0_8px_18px_rgba(85,199,243,0.4)] transition duration-200 enabled:hover:-translate-y-0.5 enabled:hover:bg-accent-300",
 };
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {

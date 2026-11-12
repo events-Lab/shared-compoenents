@@ -11,7 +11,7 @@ export function Card({ title, actions, footer, children }: CardProps) {
   const hasHeader = Boolean(title || actions);
 
   return (
-    <section className="rounded-2xl border border-secondary-200 bg-white">
+    <section className="rounded-2xl border border-primary-100 bg-primary-50">
       {hasHeader ? (
         <div className="flex items-start justify-between gap-3 px-[18px] pt-[18px]">
           {title ? (
